@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="ASSN_2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-slider@1.0.0/simple-slider.min.js"></script>
+    <script src="ASSN_2.js" defer></script>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li onclick="location.href='ASSN_2 Home.html'">Home</li>
+        <li onclick="location.href='ASSN_2 Stocks.html'">Stocks</li>
+        <li onclick="location.href='ASSN_2 Dogs.html'">Dogs</li>
+    </ul>
+</nav>
+
+<h1>Welcome to the Dogs Page</h1>
+
+
+<!-- Dog Image Carousel -->
+<div id="carousel-container">
+    <button id="prev-arrow">&#8592;</button>
+    <div class="simple-slider">
+        <!-- Images will be dynamically loaded here -->
+    </div>
+    <button id="next-arrow">&#8594;</button>
+</div>
+
+<!-- Dog Breeds List and Information -->
+<h2>Dog Breeds</h2>
+<div id="breeds-list">
+    <!-- Buttons for each dog breed will be dynamically loaded here -->
+</div>
+
+<!-- Dog Breed Information Container -->
+<div id="dog-breed-info" style="display: none;">
+    <h3 id="breed-name"></h3>
+    <p id="breed-description"></p>
+    <p>Min Life Expectancy: <span id="breed-min-life"></span> years</p>
+    <p>Max Life Expectancy: <span id="breed-max-life"></span> years</p>
+</div>
+
+  <!-- Audio Instruction Box -->
+  <div id="audio-box">
+    <h2>Available Options to Navigate by Audio:</h2>
+    <p>Say "Load dog breed &lt;name&gt;" to display breed information.</p>
+    <p>Use voice commands: "Hello"</p>
+    <p>"Change the color to &lt;color&gt;"</p>
+    <p>"Navigate to &lt;page&gt;"</p>
+
+    <!-- Audio Control Buttons -->
+    <button class="button-59" onclick="toggleAudio('on')" role="button">
+        <span class="text">Turn On Audio</span><span>Start Listening</span></button>
+
+    <button class="button-57" onclick="toggleAudio('off')" role="button">
+      <span class="text">Turn Off Audio</span><span>Stop Listening</span>
+    </button>
+  </div>
+
+</body>
+</html>
