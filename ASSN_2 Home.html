@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="ASSN_2.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="ASSN_2.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li onclick="location.href='ASSN_2 Home.html'">Home</li>
+      <li onclick="location.href='ASSN_2 Stocks.html'">Stocks</li>
+      <li onclick="location.href='ASSN_2 Dogs.html'">Dogs</li>
+    </ul>
+  </nav>
+
+  <!-- Page Heading -->
+  <h1>Welcome to the Home Page</h1>
+
+  <!-- Custom CSS Buttons -->
+  <button class="button-59" onclick="location.href='ASSN_2 Stocks.html'" role="button">
+    <span class="text">Stocks</span><span>Go to Stocks</span>
+  </button>
+
+  <button class="button-57" onclick="location.href='ASSN_2 Dogs.html'" role="button">
+    <span class="text">Dogs</span><span>Go to Dogs</span>
+  </button>
+
+  <!-- Quote Display Box -->
+  <div id="quote-box">
+    <p id="quote-text">Loading quote...</p>
+  </div>
+
+  <!-- Audio Instruction Box -->
+  <div id="audio-box">
+    <h2>Available Options to Navigate by Audio:</h2>
+    <p>Use voice commands: "Hello"</p>
+    <p>"Change the color to &lt;color&gt;"</p>
+    <p>"Navigate to &lt;page&gt;"</p>
+
+    <!-- Audio Control Buttons -->
+    <button class="button-59" onclick="toggleAudio('on')" role="button">
+        <span class="text">Turn On Audio</span><span>Start Listening</span></button>
+
+    <button class="button-57" onclick="toggleAudio('off')" role="button">
+      <span class="text">Turn Off Audio</span><span>Stop Listening</span>
+    </button>
+  </div>
+
+</body>
+</html>
